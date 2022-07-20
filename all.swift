@@ -108,3 +108,65 @@ myNil = nil
 print(myNil)
 
 
+//arrays are arrays here too
+var arr:Array<Int> = [1,2,3]
+arr[2] = 10
+arr.append(25)
+arr.removeFirst()
+arr.removeLast()
+arr.remove(at: 0)
+arr.insert(2,at:0)
+// interesting iteration
+for i in arr {
+    print(i)
+}
+
+//swift has map or dictionary toooo
+var dict = [
+    "a": "20",
+    "b": "30"
+]
+print(dict["a"])
+
+//switch in swift is mutual exclusive. meaning that you dont need to add break after each statement in switch
+switch num {
+    case 10...20: print("chcsda")
+    default: print("it is mandatory")
+}
+//default is mandatory in swift switches
+
+/*
+like c++, swift has structs!!
+each struct you make is a new type
+*/
+struct Gav {
+    var milk:Int
+    func cowww() {
+        print(milk)
+    }
+}
+
+var sefid = Gav(milk:25)
+type(of:sefid)
+print(sefid.milk)
+sefid.milk = 100
+sefid.cowww()
+
+//types are Pascalcase in swift
+
+/*
+enums in swift are like this
+*/
+enum Fruit {
+    case Apple
+    case PineApple
+}
+
+var fruit = Fruit.Apple
+
+print(Fruit.Apple)
+
+switch fruit {
+    case .Apple: print("yuyuyu")
+    default: print("")
+}
