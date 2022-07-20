@@ -62,3 +62,49 @@ print(NAME)
 // this is how you do string interpolation in swift
 let interpol = "yes!!!\(num)"
 print(interpol)
+
+// if in swift doesn't have paranthesis
+// point!! logical operators cannot be applied between ints and doubles!!
+if num1 > 10 {
+    print("holy moly")
+} else if 10 > num1{
+    print("نه بابااااا")
+} else {
+
+}
+
+ // this is while
+ while false {
+    break
+    print("csdcs")
+    continue
+ }
+
+// functions is swift are declared using the func keyword
+func Rozhin(muhammad:String) -> Int{
+    print("loves me")
+    return 10
+}
+Rozhin(muhammad:"muhammad");
+
+//in swift we have nil instead of null
+/*
+there is concept called optional in swift. by putting a question mark
+in front of the type of a variable you can say that the variable
+will have either that type or nil. 
+in other words, you specify that the variable is nullable!
+*/
+let jijijij:Int? = nil
+var myNil: Int? = 10
+print(myNil) //prints Optional(10)
+/*
+by the way, it is just like a box so we have to take it out of the box to use it.
+but we can do it anyway by using ! after the name of the variable to say that we 
+are doing it in purpose. 
+anyway this is all about null safety if swift!!
+*/
+myNil = myNil! + 2
+myNil = nil
+print(myNil)
+
+
