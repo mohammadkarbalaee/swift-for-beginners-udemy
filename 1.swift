@@ -1,5 +1,6 @@
 // var is the keyword to define a variable in swift.
 var a = 10;
+//semicolon is optional
 //the print syntax is similar to dart
 print(a);
 
@@ -31,3 +32,33 @@ programming language. uncommenting the code below will cause a compilation error
 var myInt = 10
 // myInt = 5.5
 
+/*
+Oh!! so we can use let to declare variables
+but!!! not really!
+we can use it to delcare constants
+*/
+let const = 25
+
+/*
+damn it!! you can use emoji as variable name in swift!
+that's because swift used utf-8 encoding. i guess!! unicode bro!!
+*/
+let 😂 = 55
+print(😂)
+let سلام = "نه بابا"
+print(سلام)
+//swift variables should be named with camelcase rules. good!
+
+/*
+for multi-line strings we use
+"""
+*/
+let NAME = """
+yes babe!
+ill follwllwlwllwl
+"""
+print(NAME)
+
+// this is how you do string interpolation in swift
+let interpol = "yes!!!\(num)"
+print(interpol)
