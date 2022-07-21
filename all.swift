@@ -170,3 +170,37 @@ switch fruit {
     case .Apple: print("yuyuyu")
     default: print("")
 }
+
+/*
+classes are the same as structs but they have a thing in addition to that
+and that is initializer!
+*/
+class Cow {
+    var milk:Int
+    func cowww() {
+        print(milk)
+    }
+    init(milk:Int) {
+        self.milk = milk
+    }
+}
+var anim = Cow(milk:10);
+
+/*
+protocols in swift are the same as interfaces in java
+you can override them and stuff
+*/
+protocol  Animal {
+    var milk:Int;
+    func getMilk() -> Int;
+}
+
+class Monkey:Animal {
+    var milk:Int;
+    func getMilk() -> Int {
+        print(self.milk)
+    }
+    init(milk:Int) {
+        self.milk = milk
+    }
+}
